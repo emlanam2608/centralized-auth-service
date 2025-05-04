@@ -1,0 +1,39 @@
+{
+  "name": "centralized-auth-service",
+  "version": "1.0.0",
+  "description": "Authentication service with Express.js, TypeScript, and Supabase",
+  "main": "dist/app.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "node dist/app.js",
+    "dev": "ts-node-dev --respawn src/app.ts",
+    "build": "tsc",
+    "lint": "eslint . --ext .ts",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.38.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.0.0",
+    "http-status-codes": "^2.2.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.14",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.14",
+    "@types/morgan": "^1.9.5",
+    "@types/node": "^20.6.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
+    "eslint": "^8.49.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.2.2"
+  }
+}
